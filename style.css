@@ -1,3 +1,16 @@
 .container{
     display: flex;
+    flex-wrap: wrap;
+}
+body{
+    padding-left: 400px;
+    padding-right: 400px;
+    padding-top: 100px;
+}
+.container div{
+    background-color: brown;
+    width: 100px;
+    height: 100px;
+    border: 1px solid white;
+    flex: 1 1 auto;
 }
