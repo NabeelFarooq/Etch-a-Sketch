@@ -45,13 +45,24 @@ const container = document.querySelector(".container");
 //         container.appendChild(squareDiv3[i]);
 //     }
 // }
-for(let outer=0;outer<16;++outer){
-    for(let inner=0;inner<16;++inner){
-        this["squareDiv"+outer+inner] = document.createElement("div");
-        container.appendChild(this["squareDiv"+outer+inner]);
-        this["squareDiv"+outer+inner].textContent = "squareDiv "+outer+inner;
+// let noOfSquares = document.querySelector(".input#num").value;
+// console.log(noOfSquares);
+let noOfSquares = 40;
+// let flexValue = (100/noOfSquares);
+document.querySelectorAll(".container > div").style.flexBasis = "2.5%";
+const button = document.querySelector(".input #submit");
+button.addEventListener("click",()=>{
+    for(let outer=0;outer<noOfSquares;++outer){
+        for(let inner=0;inner<noOfSquares;++inner){
+            this["squareDiv"+outer+inner] = document.createElement("div");
+            container.appendChild(this["squareDiv"+outer+inner]);
+            this["squareDiv"+outer+inner].textContent = outer+" "+inner;
+            // console.log(testno++);
+        }
     }
-}
+})
+// let testno = 0;
+
 
 // const grid = document.querySelectorAll(".container div");
 
