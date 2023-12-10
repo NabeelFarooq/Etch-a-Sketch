@@ -4,7 +4,7 @@ const applyBtn = document.querySelector(".apply");
 const rangeInput = document.querySelector("#slider");
 const outputSize = document.querySelector("#output-size");
 
-let noOfSquares = 0;
+let noOfSquares = 8;
 
 rangeInput.addEventListener('input',()=>{
     outputSize.textContent = rangeInput.value+" x "+rangeInput.value;
