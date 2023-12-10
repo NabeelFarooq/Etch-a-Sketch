@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
     <title>Etch a Sketch</title>
 </head>
 <body>
     <h1>Etch a Sketch</h1>
     <div class="container">
         <div class="control-panel">
-            <p>Enter size of grid: </p>
-            <input type="range"><br>
+            <p id="para">Enter size of grid : </p>
+            <span id="output-size"></span>
+            <input type="range" max="30" min="1" value="16" id="slider"/>
             <button class="apply">Apply</button>
             <button class="reset">Reset</button>
         </div>
         <div class="grid"></div> 
     </div>
+    <script src="javascript.js"></script>
 </body>
 </html>
