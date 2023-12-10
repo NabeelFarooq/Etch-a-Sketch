@@ -1,24 +1,24 @@
 .container{
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     width: 100%;
-    /* height: 700px; */
+    /* height: 280px;  */
     margin: auto;
 }
 body{
     margin: 0;
-    padding-top: 100px;
+    padding-top: 20px;
     padding-right: 300px;
     padding-left: 300px;
     background-color: yellow;
 }
 .container div{
     background-color: white;
-    /* width: 6.25%; */
     height: auto;
     border: 1px solid black;
-    flex: 1;
-    /* flex-basis: 100/noOfSquares%; */
+    /* flex: 1 0 auto; */
+    flex-grow: 1;
+    flex-shrink: 0;
     color: red;
     text-align: center;
     font-size: x-small;
@@ -31,4 +31,5 @@ h1{
 }
 .input {
     padding-bottom: 15px;
+    text-align: center;
 }
